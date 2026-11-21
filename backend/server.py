@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from docxtpl import DocxTemplate
 from pathlib import Path
 import datetime
+import uuid
 
 
 app = FastAPI()
@@ -30,8 +31,9 @@ async def recive(data:dict):
 
 
 # function to create an file name
+# format:  roll_uuid
 def _get_file_name(roll:str) -> str:
-    return str(roll + '__' + str(datetime.datetime.now().strftime("%Y-%m-%d")))
+    return str(f'{roll}_{uuid.uuid4().hex[:8]}')
 
 
 # function to construct data --helper Function
