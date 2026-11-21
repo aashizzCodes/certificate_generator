@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paperform — Document templates</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Paperform homepage">
+          <span class="brand-mark" aria-hidden="true">P</span>
+          <span>paperform</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="nav-link active" href="index.html">Templates</a>
+          <a class="nav-link" href="#about">About</a>
+        </nav>
+        <form
+          class="search-form"
+          role="search"
+          action="index.html"
+          method="get"
+        >
+          <label class="visually-hidden" for="template-search"
+            >Search templates</label
+          >
+          <input
+            id="template-search"
+            name="q"
+            type="search"
+            placeholder="Search templates"
+          />
+          <button class="search-button" type="submit" aria-label="Search">
+            <span aria-hidden="true">⌕</span>
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">DOCUMENTS, MADE SIMPLE</p>
+          <h1>Find your perfect<br />document.</h1>
+          <p class="hero-description">
+            Thoughtful templates for the paperwork that moves you forward.
+          </p>
+          <a class="button button-dark" href="#templates">Explore templates</a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-sheet hero-sheet-back"></div>
+          <div class="hero-sheet hero-sheet-front">
+            <span class="sheet-accent"></span>
+            <span class="sheet-line sheet-line-title"></span>
+            <span class="sheet-line"></span>
+            <span class="sheet-line sheet-line-short"></span>
+            <span class="sheet-block"></span>
+            <span class="sheet-line"></span>
+            <span class="sheet-line sheet-line-short"></span>
+          </div>
+          <span class="hero-spark hero-spark-one">✳</span>
+          <span class="hero-spark hero-spark-two">✳</span>
+        </div>
+      </section>
+
+      <section
+        class="catalog section-wrap"
+        id="templates"
+        aria-labelledby="catalog-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE TEMPLATE LIBRARY</p>
+            <h2 id="catalog-title">Documents for every next step</h2>
+          </div>
+          <span class="template-count">1 template</span>
+        </div>
+
+        <div class="template-grid">
+          <article class="template-card">
+            <a
+              class="preview-link"
+              href="form.html"
+              aria-label="Generate a Student Report Card"
+            >
+              <div class="document-preview" aria-hidden="true">
+                <div class="doc-paper">
+                  <span class="doc-kicker"></span>
+                  <span class="doc-heading"></span>
+                  <span class="doc-line"></span>
+                  <span class="doc-line doc-line-medium"></span>
+                  <span class="doc-table">
+                    <span></span><span></span> <span></span><span></span>
+                    <span></span><span></span> <span></span><span></span>
+                  </span>
+                </div>
+              </div>
+            </a>
+            <div class="template-details">
+              <div class="template-title-row">
+                <h3>Assigniment certificate page</h3>
+                <span class="format-tag">PDF</span>
+              </div>
+              <p>A clear, organized certificate page.</p>
+              <a class="button button-card" href="form.html">
+                Generate <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="about">
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>paperform</span>
+      </a>
+      <p>Simple templates. A little less paperwork.</p>
+      <span class="footer-note">© 2026 Paperform</span>
+    </footer>
+  </body>
+  <script defer src="script.js"></script>
+</html>

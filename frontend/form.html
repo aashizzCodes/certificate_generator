@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Report Card — Paperform</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Paperform homepage">
+          <span class="brand-mark" aria-hidden="true">P</span>
+          <span>paperform</span>
+        </a>
+        <a class="back-link" href="index.html"
+          ><span aria-hidden="true">←</span> All templates</a
+        >
+      </div>
+    </header>
+
+    <main class="form-page">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Templates</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">Student Report Card</span>
+      </nav>
+
+      <section class="form-layout">
+        <div class="form-intro">
+          <p class="eyebrow">PDF TEMPLATE</p>
+          <h1>certificate page</h1>
+          <p>
+            Enter the student details and choose subjects to prepare your
+            document.
+          </p>
+          <div class="form-file-note">
+            <span class="file-icon" aria-hidden="true">W</span>
+            <span><strong>PDF document</strong><br />PDF format</span>
+          </div>
+        </div>
+
+        <form class="details-form" action="download.html" method="get">
+          <div class="form-heading">
+            <h2>Student details</h2>
+            <p>Complete the fields below to continue.</p>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="first-name">First name</label>
+              <input
+                id="first-name"
+                name="first_name"
+                type="text"
+                placeholder="e.g. Alex"
+                autocomplete="given-name"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="middle-name">Middle name</label>
+              <input
+                id="middle-name"
+                name="middle_name"
+                type="text"
+                placeholder="e.g. Jordan"
+                autocomplete="additional-name"
+              />
+            </div>
+            <div class="field">
+              <label for="surname">Surname</label>
+              <input
+                id="surname"
+                name="surname"
+                type="text"
+                placeholder="e.g. Taylor"
+                autocomplete="family-name"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="roll-number">Roll number</label>
+              <input
+                id="roll-number"
+                name="roll_number"
+                type="text"
+                placeholder="e.g. FDAI037A"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="subjects-heading">
+            <h2>Subjects</h2>
+            <span>Choose one subject</span>
+          </div>
+
+          <div class="field-grid subject-grid">
+            <div class="field">
+              <label for="subject-1">Subject 1</label>
+              <select id="subject-1" name="subject_1" required>
+                <option value="" selected disabled>Select a subject</option>
+                <option>English</option>
+                <option>Mathematics</option>
+                <option>Science</option>
+                <option>Social Studies</option>
+                <option>Computer Science</option>
+              </select>
+            </div>
+          </div>
+
+          <button
+            id="submit_btn"
+            class="button button-dark submit-button"
+            type="submit"
+          >
+            Generate document <span aria-hidden="true">→</span>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer compact-footer">
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>paperform</span>
+      </a>
+      <span class="footer-note">© 2026 Paperform</span>
+    </footer>
+    <script defer src="script.js"></script>
+  </body>
+</html>
